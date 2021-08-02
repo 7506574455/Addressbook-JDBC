@@ -14,13 +14,13 @@ public class AddressbookService {
         addressBookDBService = AddressBookDBService.getInstance();
     }
     
- 
     public AddressbookService(List<Person> personList) {
         this();
         this.personList = personList;
     }
     
-   //checking address book of data equal 
+    
+     //checking address book of data equal 
      
     public List<Person> readAddressBookData(IOService ioService) {
         if (ioService.equals(IOService.DB_IO))
